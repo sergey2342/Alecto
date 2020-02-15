@@ -145,7 +145,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
         statusMessage.classList.add('contacts__status');
 
         let request = new XMLHttpRequest();
-        request.open('POST', 'server.php');
+        request.open('GET', 'server.php');
         request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
         let formData = new FormData(form);
