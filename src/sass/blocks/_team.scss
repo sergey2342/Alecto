@@ -1,0 +1,33 @@
+.team {
+    &__row {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 55px;
+    }
+    &__item {
+        position: relative;
+        top: -47px;
+        margin: 0 auto;
+        width: 216px;
+        height: 117px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    &__name {
+        padding-top: 20px;
+        color: #11749e;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__descr {
+        color: #000000;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
