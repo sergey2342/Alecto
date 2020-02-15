@@ -12,6 +12,17 @@ window.addEventListener('DOMContentLoaded', ()=> {
         feature.scrollIntoView({behavior: "smooth"});
     });
 
+    // Плавный скролл между якорями
+
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
+
     // Кнопка ScrollUp
 
     let scrollUp = document.getElementById('scroll-up');
